@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:whitesmoke;
+}
+
+.kontejner{
+    display: flex;
+    margin: auto;
+    width: 65%;
+    margin-top: 12%;
+    background-color: white;
+    border-radius: 10px;
+    color: grey;
+}
+
+.slika{
+    width: 40%; 
+    align-items: stretch;
+}
+
+.slika img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.opis{
+    width: 60%;
+    align-items: stretch;
+    flex-direction: column;
+    padding: 6%;
+}
+.naslov{
+    color:black;
+}
+
+.osoba{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 4%;
+    justify-content: space-between;
+}
+
+.tekst{
+    text-align: justify;
+    padding-top: 4%;
+}
+.zajedno{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.slikaOsobe{
+    width:12%;
+}
+
+.avatar{
+    width: 100%;
+    border-radius: 40px;
+}
+
+.imeIDatum{
+    width: 70%;
+    align-items: flex-start;
+}
+
+.imeIDatum h3{
+    padding-left: 4%;
+    color: black;
+    font-size: 100%;
+}
+
+.imeIDatum p {
+    padding-left: 4%;
+    font-size: smaller;
+}
+
+.share{
+    display: flex;
+    background-color:#ebebe0;
+    border-radius: 50%;
+    width: 6vh;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.share img{
+    width: 55%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+}
+
+.klik{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    color: white;
+    font-size: small;
+    font-weight:lighter;
+    width: 15%;
+    height: 7%;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: -7%;
+    display: none;
+}
+
+
+@media (max-width: 800px){
+    .kontejner {
+        width:50%;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-bottom: 12%;
+    }
+    .slika{
+        width: 100%;
+    }
+    .slika img{
+        border-radius: 20px 20px 0 0;
+    }
+    .opis{
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+    .naslov{
+        padding: 3%;
+        padding-left: 7%;
+        padding-right: 7%;
+        text-align: center;
+    }
+    .tekst{
+        padding: 3%;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .osoba{
+        padding: 3%;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-bottom: 5%;
+        justify-content: space-between;
+        
+    }
+    .zajedno{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        align-items: center;
+    }
+
+    .slikaOsobe{
+        width:30%;
+    }
+    .imeIDatum{
+        width:70%
+    }
+    .imeIDatum h3 {
+        font-size: smaller;
+    }
+    .imeIDatum p{
+        font-size: small;
+    }
+    .klik{
+        display: inline-flex;
+        position: initial;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0 0 20px 20px;
+        height: 8vh;
+        display: none; 
+    }
+ 
+}
